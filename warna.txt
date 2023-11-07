@@ -1,0 +1,4 @@
+warna bg =  #5CD2E6
+warna teks = putih
+warna navbar = #A6F6FF
+warna bg 2 = #2569

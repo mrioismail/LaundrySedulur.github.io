@@ -1,0 +1,190 @@
+:root {
+   --primary: #5cd2e6;
+   --bg: #2569;
+   --bg2: #a6f6ff;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.myNavbar {
+   background-color: rgba(36, 42, 71, 0.8);
+   color: rgb(255, 255, 255) !important;
+   backdrop-filter: blur(2px);
+}
+
+.myNavbar .offcanvas {
+   height: 100vh;
+   background-color: #252b48;
+}
+
+.myNavbar span {
+   font-style: italic;
+   font-weight: bold;
+   color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+   /* conten di kosongkan supaya bisa di kasih style */
+   content: '';
+
+   /* memunculkan border dibawah */
+   display: block;
+
+   /* mengatur jarak border pada teks navbar */
+   padding-bottom: 0.5rem;
+
+   /* membuat garis/border */
+   border-bottom: 0.1rem solid var(--primary);
+
+   /* mematikan animasi nya dulu dan muncul nya ketika di hover */
+   transform: scaleX(0);
+
+   /* mengatur muncul waktu nya hover supaya lebih smoot dan halus */
+   transition: 0.2s linear;
+}
+
+/* memunculkan ::after ketika di hover atau di cursor */
+.navbar .navbar-nav a:hover::after {
+   /* memunculkan kembali animasi ketika di hover (1 itu penuh dan 0.5 setengah */
+   transform: scaleX(0.7);
+}
+
+.navbar a {
+   /* 0 itu atas bawah dan 0.5rem kiri kanan */
+   margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+   color: var(--primary);
+}
+
+.home {
+   min-block-size: 100vh;
+   background-image: url(img/6.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* .home {
+   height: 100%;
+   background-color: var(--primary);
+   z-index: 1;
+   position: relative;
+}
+
+.home::after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 100%;
+   bottom: 0;
+   background: linear-gradient(0deg, rgb(255, 255, 255) 8%, rgba(63, 177, 198, 1) 50%);
+   z-index: -1;
+} */
+
+.home .img-home {
+   margin-top: 100px;
+   margin-left: 150px;
+}
+
+.home .kurir {
+   margin-top: 30px;
+   color: var(--primary);
+   font-size: 50px;
+   font-weight: bold;
+   width: 120%;
+}
+
+.home h1 {
+   font-weight: bold;
+   color: #fff;
+}
+
+.home h2 {
+   font-size: 40px;
+   margin-top: 170px;
+   color: #fff;
+   font-family: hansip;
+}
+
+.home .toDoor {
+   font-size: 1rem;
+   color: #fff;
+}
+
+.home span {
+   font-weight: bold;
+}
+
+.home .btn-order {
+   background-color: #a6f6ff;
+   margin-top: 0.5rem;
+   display: inline-block;
+   padding: 1rem 2rem;
+   border-radius: 2rem;
+   box-shadow: #252b48 0px 8px;
+   text-decoration: none;
+   color: #252b48;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+.home .btn-order:hover {
+   background-color: #252b48;
+   color: #a6f6ff;
+   box-shadow: #252b48 0px 8px;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+   html {
+      font-size: 75%;
+   }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+   html {
+      font-size: 70%;
+   }
+
+   .home h2 {
+      font-size: 27px;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home h1 {
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home .toDoor {
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home .btn-order {
+      margin-left: 37%;
+   }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+   html {
+      font-size: 65%;
+   }
+}
