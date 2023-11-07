@@ -11,20 +11,20 @@ body {
 }
 
 .myNavbar {
-   background-color: rgba(36, 42, 71, 0.8);
-   color: rgb(255, 255, 255) !important;
+   background-color: #a6f6ff;
+   color: #252b48;
    backdrop-filter: blur(2px);
 }
 
 .myNavbar .offcanvas {
    height: 100vh;
-   background-color: #252b48;
+   background-color: #a6f6ff;
 }
 
 .myNavbar span {
    font-style: italic;
    font-weight: bold;
-   color: var(--primary);
+   color: #252b48;
 }
 
 .navbar .navbar-nav a::after {
@@ -110,7 +110,7 @@ body {
    font-size: 40px;
    margin-top: 170px;
    color: #fff;
-   font-family: hansip;
+   font-weight: bold;
 }
 
 .home .toDoor {
@@ -186,5 +186,31 @@ body {
 @media (max-width: 576px) {
    html {
       font-size: 65%;
+   }
+
+   .home h2 {
+      font-size: 20px;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home h1 {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home .toDoor {
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .home .btn-order {
+      margin-left: 32%;
    }
 }
