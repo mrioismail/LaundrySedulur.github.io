@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Laundry Sedulur</title>
+      <title>LaundrySedulur</title>
 
       <!-- link css bootstrap -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -14,6 +14,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet" />
 
       <!-- icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
       <!-- CSS ku -->
       <link rel="stylesheet" href="style.css" />
@@ -23,7 +24,7 @@
 
       <nav class="navbar navbar-expand-md fixed-top myNavbar">
          <div class="container">
-            <a class="navbar-brand fs-2 text-black fw-bold" href="#">Laundry<span>Sedulur</span></a>
+            <a class="navbar-brand fs-2 text-black fw-bold" href="#">Laundry<i class="bi bi-droplet-half"></i><em>Sedulur</em></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,11 +35,11 @@
                </div>
                <div class="offcanvas-body">
                   <div class="navbar-nav ms-auto fs-5">
-                     <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
-                     <a class="nav-link active text-black" aria-current="page" href="#">Layanan</a>
-                     <a class="nav-link active text-black" aria-current="page" href="#">Daftar Harga</a>
-                     <a class="nav-link active text-black" aria-current="page" href="#">Tentang Kami</a>
-                     <a class="nav-link active text-black" aria-current="page" href="#">Kontak</a>
+                     <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                     <a class="nav-link active text-white" aria-current="page" href="#">Layanan</a>
+                     <a class="nav-link active text-white" aria-current="page" href="#">Daftar Harga</a>
+                     <a class="nav-link active text-white" aria-current="page" href="#">Tentang Kami</a>
+                     <a class="nav-link active text-white" aria-current="page" href="#">Kontak</a>
                   </div>
                </div>
             </div>
@@ -52,10 +53,15 @@
          <div class="container">
             <div class="row">
                <h2>Laundry Kiloan & Jasa Cuci Karpet</h2>
-               <div class="col-md mt-5">
+               <div class="col-md-2 ">
+                  <img src="img/kurir.png" width="125%" alt="" class="kurir"/>
+               </div>
+               <div class="col-md-10 mt-auto">
                   <h1>Antar Jemput</h1>
                   <p class="toDoor">Langsung door to door untuk daerah <span> Palangkaraya & sekitarnya. </span></p>
-                  <a href="#" class="btn-order">Order Sekarang</a>
+               </div>
+               <div class="col-md-4 mt-3">
+                  <a href="#" class="btn-order">Order Sekarang</i></a>
                </div>
             </div>
          </div>
