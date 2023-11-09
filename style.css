@@ -1,13 +1,13 @@
 :root {
-   --primary: #5cd2e6;
-   --bg: #2569;
-   --bg2: #a6f6ff;
+   --primary: #252b48;
+   --bg: #a6f6ff;
 }
 
 body {
    font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
+   height: 2000px;
 }
 
 .myNavbar {
@@ -127,6 +127,20 @@ body {
    box-shadow: #252b48 0px 0px;
 }
 
+.layanan {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.layanan h1 {
+   color: var(--primary);
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5rem;
+}
+
 /* Media Query */
 /* Laptop */
 @media (max-width: 992px) {
@@ -170,8 +184,6 @@ body {
    .home .kurir {
       margin-left: 180px;
       width: 180px;
-      background-color: #a6f6ff;
-      border-radius: 50px 0 50px 0;
    }
 }
 
@@ -182,7 +194,7 @@ body {
    }
 
    .home h2 {
-      font-size: 17px;
+      font-size: 20px;
       margin-top: 100px;
    }
 
@@ -191,11 +203,11 @@ body {
    }
 
    .home .toDoor {
-      font-size: 0.8rem;
+      font-size: 1rem;
    }
 
    .home .btn-order {
-      margin-left: 27%;
+      margin-left: 30%;
    }
 
    .navbar {
@@ -203,10 +215,16 @@ body {
    }
 
    .home .kurir {
-      margin-left: 70px;
+      margin-left: 100px;
       margin-bottom: 18px;
       width: 180px;
-      background-color: #a6f6ff;
-      border-radius: 50px 0 50px 0;
+   }
+
+   .layanan h5 {
+      font-size: 2rem;
+   }
+
+   .layanan p {
+      font-size: 1.5rem;
    }
 }
