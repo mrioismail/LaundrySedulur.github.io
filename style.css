@@ -152,6 +152,7 @@ body {
    width: 100%;
    height: 50%;
    padding-bottom: 5rem;
+   padding-top: 2rem;
 }
 
 .harga h2 {
@@ -253,6 +254,10 @@ body {
       width: 250px;
    }
 
+   .layanan {
+      padding-top: 10rem;
+   }
+
    .layanan h1 {
       text-align: center;
       font-size: 3rem;
@@ -270,6 +275,10 @@ body {
    .card {
       width: 80%;
       margin-left: 10%;
+   }
+
+   .harga {
+      padding-top: 2rem;
    }
 
    .harga h2 {
