@@ -132,7 +132,7 @@ body {
 }
 
 .layanan {
-   padding-top: 5rem;
+   padding-top: 10rem;
 }
 
 .layanan h1 {
@@ -226,8 +226,9 @@ body {
    }
 
    .home h2 {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       margin-top: 120px;
+      text-align: center;
    }
 
    .home h1 {
@@ -267,8 +268,8 @@ body {
    }
 
    .card {
-      width: 70%;
-      margin-left: 15%;
+      width: 80%;
+      margin-left: 10%;
    }
 
    .harga h2 {
@@ -279,5 +280,10 @@ body {
    .harga h3 {
       text-align: center;
       font-size: 1.7rem;
+   }
+
+   .harga .table {
+      width: 80%;
+      margin-left: 10%;
    }
 }
