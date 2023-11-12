@@ -8,6 +8,7 @@ body {
    margin: 0;
    padding: 0;
    height: 2000px;
+   scroll: snap mandatory;
 }
 
 .myNavbar {
@@ -80,16 +81,19 @@ body {
 }
 
 .home .kurir {
-   margin-top: 30px;
-   color: var(--primary);
-   font-size: 50px;
-   font-weight: bold;
-   width: 120%;
+   width: 160%;
 }
 
 .home h1 {
    font-weight: bold;
    color: #fff;
+   font-size: 3rem;
+   margin-top: 10%;
+   margin-left: 5%;
+}
+
+.home p {
+   margin-left: 5%;
 }
 
 .home h2 {
@@ -139,6 +143,18 @@ body {
    justify-content: center;
    align-items: center;
    font-size: 2.5rem;
+}
+
+.scroll {
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: all 2s ease;
+}
+
+.scroll.active {
+   transform: translateY(0px);
+   opacity: 1;
 }
 
 /* Media Query */
@@ -195,11 +211,12 @@ body {
 
    .home h2 {
       font-size: 20px;
-      margin-top: 100px;
+      margin-top: 120px;
    }
 
    .home h1 {
-      font-size: 2rem;
+      font-size: 4rem;
+      margin: 0;
    }
 
    .home .toDoor {
@@ -215,9 +232,8 @@ body {
    }
 
    .home .kurir {
-      margin-left: 100px;
-      margin-bottom: 18px;
-      width: 180px;
+      margin-left: 75px;
+      width: 250px;
    }
 
    .layanan h5 {
