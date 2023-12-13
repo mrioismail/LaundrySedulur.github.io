@@ -7,7 +7,7 @@ body {
    font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
-   /* height: 6000px; */
+   /* height: 7000px; */
 }
 
 .myNavbar {
@@ -145,6 +145,10 @@ body {
    width: 50%;
 }
 
+.layanan .card:hover {
+   transform: scale(1.1);
+}
+
 .harga {
    background-color: var(--primary);
 
@@ -175,6 +179,10 @@ body {
    width: 50%;
 }
 
+.tentangKami .maps {
+   margin-bottom: 50px;
+}
+
 .paragraf p {
    text-align: justify;
 }
@@ -186,6 +194,91 @@ body {
    border-radius: 10px;
    font-style: italic;
    margin-left: 40px;
+}
+
+.kontak h2 {
+   color: #fff;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5rem;
+   border-bottom: solid 5px #fff;
+   padding: 30px;
+   width: 50%;
+}
+
+.kontak {
+   background-color: var(--primary);
+   padding: 2rem;
+}
+
+.kontak .bgKontak {
+   background-color: var(--bg);
+   height: 600px;
+   padding: 2.5rem;
+   color: var(--primary);
+   border-radius: 25px;
+}
+
+.kontak .lokasi {
+   margin-left: -50px;
+}
+
+footer {
+   padding: 1rem;
+   background-color: var(--bg);
+   color: var(--primary);
+}
+
+footer a {
+   color: var(--primary);
+   font-weight: bold;
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: red;
+}
+
+footer li {
+   list-style: none;
+   display: inline;
+}
+
+.audio-icon {
+   width: 4rem;
+   height: 4rem;
+   font-size: 4rem;
+   position: fixed;
+   bottom: 4rem;
+   right: 2rem;
+   cursor: pointer;
+   color: white;
+   mix-blend-mode: difference;
+   opacity: 0.5;
+   animation: muter 4s linear infinite;
+   transform-origin: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 0;
+}
+
+.wa a {
+   position: fixed;
+   right: 30px;
+   bottom: 50px;
+   text-decoration: none;
+   color: black;
+   background-color: rgb(35, 243, 16);
+   border-radius: 50%;
+   height: 55px;
+   width: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
 }
 
 /* scrol js */
@@ -333,10 +426,42 @@ body {
 
    .tentangKami .paragraf {
       margin-top: 5rem;
+      margin-bottom: 5rem;
    }
 
    .tentangKami .maps {
       margin-left: 1%;
       text-align: center;
+   }
+
+   .tentangKami .img {
+      margin-left: 5%;
+      margin-top: 10%;
+      height: 90%;
+      width: 90%;
+   }
+
+   .kontak .bgKontak {
+      height: 520px;
+   }
+
+   .kontak .bgKontak span {
+      font-size: 5rem;
+   }
+
+   .bgKontak h3 {
+      font-size: 2rem;
+   }
+
+   .bgKontak p {
+      font-size: 1.2rem;
+   }
+
+   .bgKontak span {
+      font-size: 5rem;
+   }
+
+   .wa i {
+      font-size: 3rem;
    }
 }
