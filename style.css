@@ -246,31 +246,11 @@ footer li {
    display: inline;
 }
 
-.audio-icon {
-   width: 4rem;
-   height: 4rem;
-   font-size: 4rem;
-   position: fixed;
-   bottom: 4rem;
-   right: 2rem;
-   cursor: pointer;
-   color: white;
-   mix-blend-mode: difference;
-   opacity: 0.5;
-   animation: muter 4s linear infinite;
-   transform-origin: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   line-height: 0;
-}
-
 .wa a {
    position: fixed;
    right: 30px;
    bottom: 50px;
    text-decoration: none;
-   color: black;
    background-color: rgb(35, 243, 16);
    border-radius: 50%;
    height: 55px;
@@ -279,6 +259,10 @@ footer li {
    justify-content: center;
    align-items: center;
    color: white;
+}
+
+.wa i {
+   font-size: 2rem;
 }
 
 /* scrol js */

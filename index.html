@@ -414,25 +414,27 @@
 
                </div>
                <div class="col-md-6 mt-5 scroll">
-                  <form>
+                  <form
+                  method="POST" 
+                  action="https://script.google.com/macros/s/AKfycbz2ml6nOHAmAQPvHTxhPgdZOiaVHrU_6irdDi2gVH0Xg8EfNha_rJJzc8iJWVY8I8sHbA/exec" id="my-form">
                      <div class="mb-3 ms-3">
                        <label for="name" class="form- text-light">Nama</label>
-                       <input type="text" class="form-control" id="name">
+                       <input type="text" class="form-control" id="name" name="Nama">
                      </div>
                      <div class="mb-3 ms-3 ">
                         <label for="email" class="form- text-light">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" name="Email">
                       </div>
                       <div class="mb-3 ms-3 ">
                         <label for="phone" class="form- text-light">Nomor Hp</label>
-                        <input type="text" class="form-control" id="phone">
+                        <input type="text" class="form-control" id="phone" name="Phone">
                       </div>
                       <div class="mb-3 ms-3 ">
-                        <label for="exampleFormControlTextarea1" class="form-label text-light">Pesan</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        <label for="pesan" class="form-label text-light">Pesan</label>
+                        <textarea class="form-control" id="pesan" rows="10" name="Pesan"></textarea>
                       </div>
                       <div class="d-grid gap-2 mx-auto ms-3">
-                        <button class="btn btn-success p-3 fs-5 rounded-pill" type="button">Kirim</button>
+                        <button class="btn btn-success p-3 fs-5 rounded-pill" type="submit">Kirim</button>
                       </div>
                    </form>
                </div>
