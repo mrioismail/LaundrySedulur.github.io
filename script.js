@@ -28,7 +28,7 @@ window.addEventListener('load', function () {
          method: 'POST',
          body: data,
       }).then(() => {
-         alert('Data anda berhasil terkirim bos, terimakasih!')
+         alert('Terimakasih bos!, pesan anda sudah kami terima')
       })
    })
 })
